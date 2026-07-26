@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-lang="en">
+
+  <header class="site-header">
+    <a href="index.html" class="brand-logo">MyWebsite</a>
+    
+    <nav class="main-nav">
+      <a href="index.html" data-lang-content="en">Home</a>
+      <a href="index.html" data-lang-content="fr">Accueil</a>
+      <a href="index.html" data-lang-content="es">Inicio</a>
+
+      <a href="support.html" data-lang-content="en">Support</a>
+      <a href="support.html" data-lang-content="fr">Support</a>
+      <a href="support.html" data-lang-content="es">Soporte</a>
+
+      <a href="privacy.html" data-lang-content="en">Privacy</a>
+      <a href="privacy.html" data-lang-content="fr">Confidentialité</a>
+      <a href="privacy.html" data-lang-content="es">Privacidad</a>
+
+      <a href="contact.html" data-lang-content="en">Contact</a>
+      <a href="contact.html" data-lang-content="fr">Contact</a>
+      <a href="contact.html" data-lang-content="es">Contacto</a>
+    </nav>
+
+    <div class="lang-toggle-wrapper">
+      <select class="lang-select" onchange="switchLanguage(this.value)" aria-label="Select Language">
+        <option value="en">English 🇺🇸</option>
+        <option value="fr">Français 🇫🇷</option>
+        <option value="es">Español 🇪🇸</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <div data-lang-content="en">
+        <h1>Contact Us</h1>
+        <p style="margin-bottom: 1.5rem;">Fill out the form below to reach us.</p>
+        <form onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your Name" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Your Email" />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div data-lang-content="fr">
+        <h1>Contactez-nous</h1>
+        <p style="margin-bottom: 1.5rem;">Remplissez le formulaire ci-dessous pour nous contacter.</p>
+        <form onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label>Nom</label>
+            <input type="text" placeholder="Votre nom" />
+          </div>
+          <div class="form-group">
+            <label>Courriel</label>
+            <input type="email" placeholder="Votre courriel" />
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+
+      <div data-lang-content="es">
+        <h1>Contáctenos</h1>
+        <p style="margin-bottom: 1.5rem;">Complete el siguiente formulario para ponerse en contacto con nosotros.</p>
+        <form onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" placeholder="Su nombre" />
+          </div>
+          <div class="form-group">
+            <label>Correo Electrónico</label>
+            <input type="email" placeholder="Su correo electrónico" />
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p data-lang-content="en">&copy; All rights reserved.</p>
+    <p data-lang-content="fr">&copy; Tous droits réservés.</p>
+    <p data-lang-content="es">&copy; Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="lang-switcher.js"></script>
+</body>
+</html>
