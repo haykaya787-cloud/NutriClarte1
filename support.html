@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-lang="en">
+
+  <header class="site-header">
+    <a href="index.html" class="brand-logo">MyWebsite</a>
+    
+    <nav class="main-nav">
+      <a href="index.html" data-lang-content="en">Home</a>
+      <a href="index.html" data-lang-content="fr">Accueil</a>
+      <a href="index.html" data-lang-content="es">Inicio</a>
+
+      <a href="support.html" data-lang-content="en">Support</a>
+      <a href="support.html" data-lang-content="fr">Support</a>
+      <a href="support.html" data-lang-content="es">Soporte</a>
+
+      <a href="privacy.html" data-lang-content="en">Privacy</a>
+      <a href="privacy.html" data-lang-content="fr">Confidentialité</a>
+      <a href="privacy.html" data-lang-content="es">Privacidad</a>
+
+      <a href="contact.html" data-lang-content="en">Contact</a>
+      <a href="contact.html" data-lang-content="fr">Contact</a>
+      <a href="contact.html" data-lang-content="es">Contacto</a>
+    </nav>
+
+    <div class="lang-toggle-wrapper">
+      <select class="lang-select" onchange="switchLanguage(this.value)" aria-label="Select Language">
+        <option value="en">English 🇺🇸</option>
+        <option value="fr">Français 🇫🇷</option>
+        <option value="es">Español 🇪🇸</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <div data-lang-content="en">
+        <h1>Support Center</h1>
+        <p>Welcome to our support center. How can we help you today?</p>
+      </div>
+
+      <div data-lang-content="fr">
+        <h1>Centre d'assistance</h1>
+        <p>Bienvenue dans notre centre d'assistance. Comment pouvons-nous vous aider aujourd'hui ?</p>
+      </div>
+
+      <div data-lang-content="es">
+        <h1>Centro de Soporte</h1>
+        <p>Bienvenido a nuestro centro de soporte. ¿Cómo podemos ayudarte hoy?</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p data-lang-content="en">&copy; All rights reserved.</p>
+    <p data-lang-content="fr">&copy; Tous droits réservés.</p>
+    <p data-lang-content="es">&copy; Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="lang-switcher.js"></script>
+</body>
+</html>
