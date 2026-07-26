@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Frequently Asked Questions</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    /* FAQ Specific Styling */
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 1rem;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .faq-question {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 0.5rem;
+    }
+    .faq-answer {
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body data-lang="en">
+
+  <!-- Shared Site Header -->
+  <header class="site-header">
+    <a href="index.html" class="brand-logo">MyWebsite</a>
+    
+    <nav class="main-nav">
+      <a href="index.html" data-lang-content="en">Home</a>
+      <a href="index.html" data-lang-content="fr">Accueil</a>
+      <a href="index.html" data-lang-content="es">Inicio</a>
+
+      <a href="faq.html" data-lang-content="en">FAQ</a>
+      <a href="faq.html" data-lang-content="fr">FAQ</a>
+      <a href="faq.html" data-lang-content="es">FAQ</a>
+
+      <a href="support.html" data-lang-content="en">Support</a>
+      <a href="support.html" data-lang-content="fr">Support</a>
+      <a href="support.html" data-lang-content="es">Soporte</a>
+
+      <a href="privacy.html" data-lang-content="en">Privacy</a>
+      <a href="privacy.html" data-lang-content="fr">Confidentialité</a>
+      <a href="privacy.html" data-lang-content="es">Privacidad</a>
+
+      <a href="contact.html" data-lang-content="en">Contact</a>
+      <a href="contact.html" data-lang-content="fr">Contact</a>
+      <a href="contact.html" data-lang-content="es">Contacto</a>
+    </nav>
+
+    <!-- Upper-Right Language Toggle Selector -->
+    <div class="lang-toggle-wrapper">
+      <select class="lang-select" onchange="switchLanguage(this.value)" aria-label="Select Language">
+        <option value="en">English 🇺🇸</option>
+        <option value="fr">Français 🇫🇷</option>
+        <option value="es">Español 🇪🇸</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main class="container">
+    <div class="card">
+
+      <!-- English Content -->
+      <div data-lang-content="en">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq-item">
+          <div class="faq-question">How do I change my account language?</div>
+          <div class="faq-answer">You can switch the language at any time using the dropdown selector located in the upper-right corner of any page.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How do I contact customer support?</div>
+          <div class="faq-answer">Visit our Contact or Support page to get in touch with our team directly.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Is my user data secure?</div>
+          <div class="faq-answer">Yes, data security is our top priority. Please review our Privacy page for full details.</div>
+        </div>
+      </div>
+
+      <!-- French Content -->
+      <div data-lang-content="fr">
+        <h1>Foire Aux Questions</h1>
+        
+        <div class="faq-item">
+          <div class="faq-question">Comment changer la langue de mon compte ?</div>
+          <div class="faq-answer">Vous pouvez changer de langue à tout moment à l'aide du sélecteur situé dans le coin supérieur droit de n'importe quelle page.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Comment contacter le support client ?</div>
+          <div class="faq-answer">Visitez notre page Contact ou Support pour entrer directement en contact avec notre équipe.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Mes données utilisateur sont-elles en sécurité ?</div>
+          <div class="faq-answer">Oui, la sécurité des données est notre priorité absolue. Veuillez consulter notre page Confidentialité pour tous les détails.</div>
+        </div>
+      </div>
+
+      <!-- Spanish Content -->
+      <div data-lang-content="es">
+        <h1>Preguntas Frecuentes</h1>
+        
+        <div class="faq-item">
+          <div class="faq-question">¿Cómo cambio el idioma de mi cuenta?</div>
+          <div class="faq-answer">Puede cambiar el idioma en cualquier momento utilizando el menú desplegable situado en la esquina superior derecha de cualquier página.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">¿Cómo me pongo en contacto con el soporte técnico?</div>
+          <div class="faq-answer">Visite nuestra página de Contacto o Soporte para comunicarse directamente con nuestro equipo.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">¿Están seguros mis datos de usuario?</div>
+          <div class="faq-answer">Sí, la seguridad de los datos es nuestra máxima prioridad. Revise nuestra página de Privacidad para obtener más detalles.</div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <p data-lang-content="en">&copy; All rights reserved.</p>
+    <p data-lang-content="fr">&copy; Tous droits réservés.</p>
+    <p data-lang-content="es">&copy; Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="assets/js/lang-switcher.js"></script>
+</body>
+</html>
