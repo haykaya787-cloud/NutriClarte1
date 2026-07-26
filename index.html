@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-lang="en">
+
+  <header class="site-header">
+    <a href="index.html" class="brand-logo">MyWebsite</a>
+    
+    <nav class="main-nav">
+      <a href="index.html" data-lang-content="en">Home</a>
+      <a href="index.html" data-lang-content="fr">Accueil</a>
+      <a href="index.html" data-lang-content="es">Inicio</a>
+
+      <a href="support.html" data-lang-content="en">Support</a>
+      <a href="support.html" data-lang-content="fr">Support</a>
+      <a href="support.html" data-lang-content="es">Soporte</a>
+
+      <a href="privacy.html" data-lang-content="en">Privacy</a>
+      <a href="privacy.html" data-lang-content="fr">Confidentialité</a>
+      <a href="privacy.html" data-lang-content="es">Privacidad</a>
+
+      <a href="contact.html" data-lang-content="en">Contact</a>
+      <a href="contact.html" data-lang-content="fr">Contact</a>
+      <a href="contact.html" data-lang-content="es">Contacto</a>
+    </nav>
+
+    <!-- Upper Right Toggle Selector -->
+    <div class="lang-toggle-wrapper">
+      <select class="lang-select" onchange="switchLanguage(this.value)" aria-label="Select Language">
+        <option value="en">English 🇺🇸</option>
+        <option value="fr">Français 🇫🇷</option>
+        <option value="es">Español 🇪🇸</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <div data-lang-content="en">
+        <h1>Welcome to Our Website</h1>
+        <p>This is the main homepage. Use the navigation links or language selector in the top-right corner to test language persistence.</p>
+      </div>
+
+      <div data-lang-content="fr">
+        <h1>Bienvenue sur notre site Web</h1>
+        <p>Ceci est la page d'accueil principale. Utilisez les liens de navigation ou le sélecteur de langue dans le coin supérieur droit.</p>
+      </div>
+
+      <div data-lang-content="es">
+        <h1>Bienvenido a nuestro sitio web</h1>
+        <p>Esta es la página de inicio principal. Utilice los enlaces de navegación o el selector de idioma en la esquina superior derecha.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p data-lang-content="en">&copy; All rights reserved.</p>
+    <p data-lang-content="fr">&copy; Tous droits réservés.</p>
+    <p data-lang-content="es">&copy; Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="lang-switcher.js"></script>
+</body>
+</html>
