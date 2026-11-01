@@ -37,7 +37,7 @@ const PRODUCTS = [
 const GOALS = ["standard","lowsodium","lowsugar","highprotein","cardio"];
 // Alert thresholds apply to the values on screen (per 100 g or per real portion)
 const LIMITS = { sugars:15, satfat:5, sodium:400, protein:10 };
-const PHONE = "+1 (514) 555-0147"; // TODO: replace with the real NutriClarté number
+const PHONE = "+1 (438) 808-8911";
 
 // ---------- State ----------
 const store = {
